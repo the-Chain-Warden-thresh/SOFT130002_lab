@@ -4,11 +4,15 @@
 <head>
     <meta charset="utf8">
     <title>Register</title>
+    <link href="css\reset.css" rel="stylesheet" type="text/css">
+    <link href="css\register.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
-        <nav> <a href="index.html">主页</a> </nav>
+        <nav>
+            <li> <a href="index.html">主页</a> </li>
+        </nav>
     </header>
     <h1>创建账户</h1>
     <section>
@@ -19,11 +23,11 @@
             </p>
             <p>
                 请设置密码<br>
-                <input type="password" name="password" pattern="[A-z]|[0-9]{8,}" title="8 位以上，只允许大小写字母加数字" required>
+                <input type="password" name="password" pattern="[A-z|0-9]{8,}" title="8 位以上，只允许大小写字母加数字" required>
             </p>
             <p>
                 请确认密码<br>
-                <input type="password" name="repassword" pattern="[A-z]|[0-9]{8,}" title="8 位以上，只允许大小写字母加数字" required>
+                <input type="password" name="repassword" pattern="[A-z|0-9]{8,}" title="8 位以上，只允许大小写字母加数字" required>
             </p>
             <p>
                 您的居住地<br>
@@ -50,7 +54,7 @@
             <p>
                 请复查以下协议，并通过选择页面底部的选项同意此协议。您必须同意这些协议条款才能继续。（当然，由于技术所限，即便您选择了不同意，也是可以继续的，没想到吧）
             </p>
-            <textarea disabled="true" cols=83 rows=80>
+            <textarea disabled="true">
                 1、本站服务条款
                 本站提供的服务将完全按照服务条款严格执行。用户必须完全同意所有服务条款并完成注册程序，才能成为本站的正式用户。
                 考虑到本站所提供的网络服务的重要性，用户应同意：
